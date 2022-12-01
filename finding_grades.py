@@ -46,11 +46,11 @@ def main():
     # Gets the level and outputs the percent if the level is valid
 
     level_text = input("Enter a level to convert to percent: ")
-    percent_text = find_percentage(level_text)
-    if not percent_text == -1:
+    percent_integer = find_percentage(level_text)
+    if not percent_integer == -1:
         print(
-            "\nA level of {0} has a middle percent of {1}".format(
-                level_text, percent_text
+            "\nA level of {0} has a middle percent of {1}%".format(
+                level_text, percent_integer
             )
         )
     else:
